@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIBERRED | Internet 100% Fibra Óptica en Perú</title>
+  <meta name="description" content="Internet de fibra óptica simétrica para tu hogar: planes desde S/ 69 al mes, instalación en 24 horas y soporte humano por WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2283152088923986');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2283152088923986&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+ 
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ===== Top bar ===== -->
+  <div class="top-bar">
+    <div class="top-bar-container">
+      <div class="top-links">
+        <a href="#" class="active">Personas</a>
+        <a href="#">Empresas</a>
+      </div>
+      <div class="top-support">
+        <a href="#faq"><i class="fas fa-headset"></i> Atención al cliente</a>
+        <a href="#"><i class="fas fa-file-invoice"></i> Paga tu recibo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Navegación ===== -->
+  <header id="siteHeader">
+    <nav class="navbar">
+      <a href="#inicio" class="logo">
+        <span class="logo-mark"><i class="fas fa-wifi"></i></span>FIBER<span>RED</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#planes">Planes hogar</a></li>
+        <li><a href="#velocidad">Velocidad</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#cobertura">Cobertura</a></li>
+        <li><a href="#faq">Ayuda</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn-login"><i class="far fa-user"></i> <span>Mi FiberRed</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section id="inicio" class="hero-promo">
+    <span class="hero-glow one"></span>
+    <span class="hero-glow two"></span>
+
+    <div class="hero-container">
+      <div class="hero-text">
+        <span class="tag-promo hero-enter"><span class="dot"></span> Instalación gratis este mes</span>
+        <h1 class="hero-enter">Tu casa conectada a <em class="type-target" id="typeTarget"></em></h1>
+        <p class="lead hero-enter">Fibra óptica hasta el router, con la misma velocidad para subir y bajar. Sin cortes en la hora pico, sin letra chica y con un técnico que te contesta de verdad.</p>
+        <div class="hero-actions hero-enter">
+          <a href="#planes" class="btn-primary">Ver planes y precios</a>
+          <a href="#cobertura" class="btn-secondary">Consultar cobertura</a>
+        </div>
+        <div class="hero-stats hero-enter">
+          <div>
+            <span class="value" data-count="98" data-suffix="%">0%</span>
+            <span class="label">Hogares conectados en 24 h</span>
+          </div>
+          <div>
+            <span class="value" data-count="12" data-suffix=" ms">0 ms</span>
+            <span class="label">Latencia promedio en juegos</span>
+          </div>
+          <div>
+            <span class="value"><i class="fas fa-star"></i> 4.8</span>
+            <span class="label">Calificación de 2 400 clientes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="fiber-panel">
+          <header>
+            <span class="panel-title">Prueba de velocidad · Plan Dúo Pro</span>
+            <span class="panel-live"><span class="dot"></span> en vivo</span>
+          </header>
+
+          <div class="gauge">
+            <span class="num" id="gaugeNum">0</span>
+            <span class="unit">Mbps</span>
+          </div>
+
+          <svg class="fiber-lines" viewBox="0 0 400 120" aria-hidden="true">
+            <defs>
+              <linearGradient id="fiberGrad" x1="0" x2="1">
+                <stop offset="0%" stop-color="#ff6000"/>
+                <stop offset="100%" stop-color="#2ee6d6"/>
+              </linearGradient>
+            </defs>
+            <path id="f1" d="M0,20 C120,20 150,60 400,60" stroke="rgba(255,255,255,.14)" stroke-width="2" fill="none"/>
+            <path id="f2" d="M0,60 C140,60 180,60 400,60" stroke="rgba(255,255,255,.14)" stroke-width="2" fill="none"/>
+            <path id="f3" d="M0,100 C120,100 150,60 400,60" stroke="rgba(255,255,255,.14)" stroke-width="2" fill="none"/>
+            <g fill="url(#fiberGrad)">
+              <circle r="4"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#f1"/></animateMotion></circle>
+              <circle r="4"><animateMotion dur="2.4s" begin="0.8s" repeatCount="indefinite"><mpath href="#f2"/></animateMotion></circle>
+              <circle r="4"><animateMotion dur="2.4s" begin="1.6s" repeatCount="indefinite"><mpath href="#f3"/></animateMotion></circle>
+            </g>
+            <circle cx="398" cy="60" r="7" fill="#2ee6d6" opacity=".9"/>
+          </svg>
+
+          <div class="panel-rows">
+            <div class="panel-row">
+              <i class="fas fa-arrow-down"></i> Bajada
+              <span class="bar"><span data-fill="92"></span></span>
+            </div>
+            <div class="panel-row">
+              <i class="fas fa-arrow-up"></i> Subida
+              <span class="bar"><span data-fill="90"></span></span>
+            </div>
+            <div class="panel-row">
+              <i class="fas fa-shield-halved"></i> Estabilidad
+              <span class="bar"><span data-fill="97"></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Banda de confianza (marquesina) ===== -->
+  <div class="trust-band">
+    <div class="marquee" id="marquee">
+      <div class="marquee-group">
+        <span class="trust-item"><i class="fas fa-gauge-high"></i> Velocidad simétrica real</span>
+        <span class="trust-item"><i class="fas fa-screwdriver-wrench"></i> Instalación en 24 horas</span>
+        <span class="trust-item"><i class="fas fa-headset"></i> Soporte por WhatsApp 24/7</span>
+        <span class="trust-item"><i class="fas fa-router"></i> Router Wi-Fi 6 incluido</span>
+        <span class="trust-item"><i class="fas fa-infinity"></i> Sin límite de descarga</span>
+        <span class="trust-item"><i class="fas fa-file-signature"></i> Sin contrato de permanencia</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Planes ===== -->
+  <section id="planes" class="pricing-section">
+    <div class="section-title reveal">
+      <h2>Planes pensados para cómo usas internet</h2>
+      <p>Precios exclusivos de contratación online. Elige la combinación que te sirva.</p>
+    </div>
+
+    <div class="tabs reveal" id="tabs">
+      <span class="tab-indicator" id="tabIndicator"></span>
+      <button class="tab-btn active" data-tab="solo">Solo internet</button>
+      <button class="tab-btn" data-tab="tv">Internet + TV HD</button>
+    </div>
+
+    <div class="pricing-grid" id="pricingGrid">
+      <!-- Plan 1 -->
+      <article class="pro-card reveal" data-plan="basico">
+        <div class="card-header">
+          <h3>Plan Básico</h3>
+          <p>Para navegar, ver redes y trabajar desde casa sin sobresaltos.</p>
+        </div>
+        <div class="card-price">
+          <span class="currency">S/</span>
+          <span class="amount" data-solo="69" data-tv="89">69</span>
+          <span class="period">.00<br>al mes</span>
+        </div>
+        <p class="price-note">Precio fijo los primeros 12 meses.</p>
+        <div class="card-speed">
+          <span class="speed-number">100</span> <span class="speed-unit">Mbps</span>
+          <span class="speed-sym">100 de bajada · 100 de subida</span>
+        </div>
+        <ul class="card-features">
+          <li><i class="fas fa-check-circle"></i> Descarga y streaming sin límite</li>
+          <li><i class="fas fa-check-circle"></i> Router Wi-Fi doble banda</li>
+          <li><i class="fas fa-check-circle"></i> Antivirus para 2 equipos</li>
+          <li class="tv-only" hidden><i class="fas fa-tv"></i> 60 canales HD + guía en vivo</li>
+        </ul>
+        <a href="https://wa.me/51948518211?text=Hola,%20quiero%20el%20Plan%20B%C3%A1sico" target="_blank" rel="noopener" class="btn-primary full-width">Contratar plan</a>
+      </article>
+
+      <!-- Plan 2 -->
+      <article class="pro-card featured reveal" data-plan="duo" style="--delay:.1s">
+        <span class="ribbon">MÁS ELEGIDO</span>
+        <div class="card-header">
+          <h3>Plan Dúo Pro</h3>
+          <p>Varias pantallas en 4K, videollamadas y descargas a la vez.</p>
+        </div>
+        <div class="card-price">
+          <span class="currency">S/</span>
+          <span class="amount" data-solo="99" data-tv="119">99</span>
+          <span class="period">.00<br>al mes</span>
+        </div>
+        <p class="price-note">Incluye instalación gratis online.</p>
+        <div class="card-speed">
+          <span class="speed-number">250</span> <span class="speed-unit">Mbps</span>
+          <span class="speed-sym">250 de bajada · 250 de subida</span>
+        </div>
+        <ul class="card-features">
+          <li><i class="fas fa-check-circle"></i> Velocidad simétrica garantizada</li>
+          <li><i class="fas fa-check-circle"></i> Router mesh inteligente</li>
+          <li><i class="fas fa-check-circle"></i> Cobertura en toda la casa</li>
+          <li><i class="fas fa-gift"></i> Instalación sin costo</li>
+          <li class="tv-only" hidden><i class="fas fa-tv"></i> 80 canales HD + 12 premium</li>
+        </ul>
+        <a href="https://wa.me/51948518211?text=Hola,%20quiero%20el%20Plan%20D%C3%BAo%20Pro" target="_blank" rel="noopener" class="btn-primary full-width">Contratar plan</a>
+      </article>
+
+      <!-- Plan 3 -->
+      <article class="pro-card reveal" data-plan="gamer" style="--delay:.2s">
+        <div class="card-header">
+          <h3>Plan Ultra Gamer</h3>
+          <p>Ping bajo y estable para competir, transmitir y subir clips.</p>
+        </div>
+        <div class="card-price">
+          <span class="currency">S/</span>
+          <span class="amount" data-solo="139" data-tv="159">139</span>
+          <span class="period">.00<br>al mes</span>
+        </div>
+        <p class="price-note">IP fija opcional por S/ 10.</p>
+        <div class="card-speed">
+          <span class="speed-number">500</span> <span class="speed-unit">Mbps</span>
+          <span class="speed-sym">500 de bajada · 500 de subida</span>
+        </div>
+        <ul class="card-features">
+          <li><i class="fas fa-check-circle"></i> Ruta optimizada a servidores de juego</li>
+          <li><i class="fas fa-check-circle"></i> 2 routers mesh Wi-Fi 6</li>
+          <li><i class="fas fa-check-circle"></i> Atención prioritaria en averías</li>
+          <li class="tv-only" hidden><i class="fas fa-tv"></i> 120 canales HD + deportes</li>
+        </ul>
+        <a href="https://wa.me/51948518211?text=Hola,%20quiero%20el%20Plan%20Ultra%20Gamer" target="_blank" rel="noopener" class="btn-primary full-width">Contratar plan</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Comparador de velocidad ===== -->
+  <section id="velocidad" class="speed-lab">
+    <div class="lab-grid">
+      <div class="lab-copy reveal">
+        <h2>Mira cuánto demora cada plan</h2>
+        <p>Elige qué quieres descargar y compara nuestra fibra contra una conexión ADSL típica de 20 Mbps. Los tiempos se calculan con el tamaño real del archivo.</p>
+        <div class="lab-choices" role="group" aria-label="Elige qué descargar">
+          <button class="chip active" data-size="1.5" data-label="Serie en HD (1.5 GB)">Serie HD</button>
+          <button class="chip" data-size="8" data-label="Película en 4K (8 GB)">Película 4K</button>
+          <button class="chip" data-size="60" data-label="Videojuego completo (60 GB)">Videojuego</button>
+        </div>
+      </div>
+
+      <div class="race reveal" id="race" style="--delay:.15s">
+        <div class="race-row">
+          <div class="race-head"><strong>ADSL 20 Mbps</strong><span class="time" data-speed="20">—</span></div>
+          <div class="race-track"><div class="race-fill" data-speed="20"></div></div>
+        </div>
+        <div class="race-row">
+          <div class="race-head"><strong>Fibra 100 Mbps</strong><span class="time" data-speed="100">—</span></div>
+          <div class="race-track"><div class="race-fill" data-speed="100"></div></div>
+        </div>
+        <div class="race-row mine">
+          <div class="race-head"><strong>Fibra 500 Mbps</strong><span class="time" data-speed="500">—</span></div>
+          <div class="race-track"><div class="race-fill" data-speed="500"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Servicios plus ===== -->
+  <section id="beneficios" class="premium-plus on-dark">
+    <div class="section-title reveal">
+      <h2>Lo que no encuentras en las grandes operadoras</h2>
+      <p>Tres cosas que cambian el día a día cuando contratas internet.</p>
+    </div>
+    <div class="plus-grid">
+      <article class="plus-card reveal">
+        <div class="icon-wrapper"><i class="fas fa-gamepad"></i></div>
+        <h3>Modo gamer</h3>
+        <p>Rutas de fibra optimizadas hacia servidores de Brasil y Estados Unidos. Ping bajo y sin pérdida de paquetes cuando más importa.</p>
+      </article>
+      <article class="plus-card reveal" style="--delay:.1s">
+        <div class="icon-wrapper"><i class="fas fa-circle-pause"></i></div>
+        <h3>Congela tu plan</h3>
+        <p>¿Te vas de viaje? Pausa el servicio 15 o 30 días desde la app. No pagas el internet que no vas a usar.</p>
+      </article>
+      <article class="plus-card reveal" style="--delay:.2s">
+        <div class="icon-wrapper"><i class="fas fa-comments"></i></div>
+        <h3>Soporte con personas</h3>
+        <p>Escribes por WhatsApp y te responde un técnico de tu ciudad en menos de cinco minutos. Sin menús de opciones ni esperas.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Cobertura ===== -->
+  <section id="cobertura" class="coverage">
+    <div class="coverage-box reveal">
+      <h2>Revisa si llegamos a tu zona</h2>
+      <p>Escribe tu distrito y te decimos si hay fibra disponible hoy mismo.</p>
+      <form class="coverage-form" id="coverageForm">
+        <select id="cityInput" aria-label="Ciudad">
+          <option value="Arequipa">Arequipa</option>
+          <option value="Lima">Lima</option>
+          <option value="Cusco">Cusco</option>
+          <option value="Trujillo">Trujillo</option>
+        </select>
+        <input type="text" id="districtInput" placeholder="Tu distrito, por ejemplo Cayma" aria-label="Distrito" required>
+        <button type="submit" class="btn-primary" id="coverageBtn">Revisar cobertura</button>
+      </form>
+      <div class="coverage-result" id="coverageResult" role="status" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ===== Opiniones ===== -->
+  <section class="reviews">
+    <div class="section-title reveal">
+      <h2>Clientes que ya cambiaron de conexión</h2>
+      <p>Opiniones recogidas tras los primeros tres meses de servicio.</p>
+    </div>
+
+    <div class="slider reveal" id="slider">
+      <div class="slides">
+        <div class="slides-track" id="slidesTrack">
+          <div class="slide">
+            <div class="stars">★★★★★</div>
+            <blockquote>Trabajo con videollamadas todo el día y desde que instalaron la fibra no se me ha caído ni una reunión. La subida simétrica se nota al enviar archivos pesados.</blockquote>
+            <div class="who"><span class="avatar">MC</span><div><b>María Carrasco</b><span>Arquitecta · Yanahuara, Arequipa</span></div></div>
+          </div>
+          <div class="slide">
+            <div class="stars">★★★★★</div>
+            <blockquote>Pasé de 90 de ping a 14. Mis amigos creían que había cambiado de PC. La instalación fue al día siguiente de contratar.</blockquote>
+            <div class="who"><span class="avatar">JQ</span><div><b>Jorge Quispe</b><span>Estudiante · Cerro Colorado</span></div></div>
+          </div>
+          <div class="slide">
+            <div class="stars">★★★★☆</div>
+            <blockquote>Lo mejor es el soporte. Escribí un domingo por la noche y en diez minutos ya tenía la solución, sin contestadora automática de por medio.</blockquote>
+            <div class="who"><span class="avatar">LF</span><div><b>Lucía Flores</b><span>Emprendedora · Cayma</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-nav" id="sliderNav"></div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="faq">
+    <div class="section-title reveal">
+      <h2>Preguntas frecuentes</h2>
+      <p>Y si falta alguna, escríbenos por WhatsApp.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q">¿Qué significa velocidad simétrica? <i class="fas fa-plus"></i></button>
+        <div class="faq-a"><p>Que subes a la misma velocidad a la que bajas. En un plan de 250 Mbps envías archivos, transmites y respaldas en la nube a 250 Mbps, no a 20 como en las conexiones tradicionales.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">¿Cuánto demora la instalación? <i class="fas fa-plus"></i></button>
+        <div class="faq-a"><p>En zonas con cobertura instalamos dentro de las 24 horas siguientes. El técnico deja el router configurado y verifica la velocidad contigo antes de irse.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">¿Hay contrato de permanencia? <i class="fas fa-plus"></i></button>
+        <div class="faq-a"><p>No. Puedes dar de baja el servicio cuando quieras avisando con 30 días. Solo devuelves los equipos en buen estado.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">¿Puedo cambiar de plan más adelante? <i class="fas fa-plus"></i></button>
+        <div class="faq-a"><p>Sí, subes o bajas de plan desde la app una vez al mes y el cambio se aplica en el siguiente ciclo de facturación, sin costo adicional.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA final ===== -->
+  <section class="cta-final">
+    <div class="reveal">
+      <h2>Contrata hoy y conéctate mañana</h2>
+      <p>Un asesor revisa tu dirección, agenda la instalación y te acompaña hasta que todo funcione.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/51948518211?text=Hola,%20quiero%20contratar%20FiberRed" target="_blank" rel="noopener" class="btn-primary"><i class="fab fa-whatsapp"></i> Hablar con un asesor</a>
+        <a href="#planes" class="btn-secondary">Volver a los planes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="corporate-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>FIBERRED</h4>
+        <p>Red de fibra óptica hasta el hogar, operada y soportada por equipos locales en cada ciudad donde llegamos.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <a href="#planes">Internet hogar</a>
+        <a href="#">Internet empresas</a>
+        <a href="#">Televisión HD</a>
+        <a href="#">Telefonía fija</a>
+      </div>
+      <div class="footer-col">
+        <h4>Atención al cliente</h4>
+        <a href="#faq">Centro de ayuda</a>
+        <a href="#">Lugares de pago</a>
+        <a href="#">Reclamos</a>
+        <a href="#velocidad">Test de velocidad</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legales</h4>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Libro de reclamaciones</a>
+        <a href="#">Condiciones de uso</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FIBERRED Perú. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/51948518211?text=Hola,%20quiero%20contratar%20FiberRed" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <button class="to-top" id="toTop" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
